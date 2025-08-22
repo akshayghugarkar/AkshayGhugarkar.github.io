@@ -1,0 +1,205 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0078ff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0078ff;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home span {
+  color: #0078ff;
+}
+
+.home p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn,
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0078ff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover,
+.resume-btn:hover {
+  background-color: #0056b3;
+}
+
+/* About Section */
+.about p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.skill-card i {
+  font-size: 2rem;
+  color: #0078ff;
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects p {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  color: #0078ff;
+  margin-right: 10px;
+}
+
+.contact-info a {
+  color: #0078ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  section {
+    padding: 80px 15px;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+}
